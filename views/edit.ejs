@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit Task</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-zinc-900 text-white p-10">
+    <div class="max-w-2xl mx-auto bg-zinc-800 p-6 rounded-md">
+       
+        <form action="/edit" method="post">
+          <input name="previous" value="<%= filename%>" class="block rounded-md w-1/4 px-5 py-2 outline-none border border-white-400 bg-zinc-800" 
+                 type="text" placeholder="Previous Name">
+
+          <input name="new" class="block w-1/4 rounded-md border border-white-400 mt-4 px-5 py-2 bg-zinc-800 resize-none"  
+                    placeholder="New Name"></textarea>
+                    
+          <input class="mt-2 bg-blue-600 rounded-md px-3 py-2" type="submit" value="Edit Name">
+        </form>
+    </div>
+</body>
+</html>
+
